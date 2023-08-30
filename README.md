@@ -23,7 +23,7 @@
 
 ```console
  $ screen -S Rewe
- $ python3 -m Rewe
+ $ python3 -m Uputt
 ```
 
 ## Heroku Deploy!
