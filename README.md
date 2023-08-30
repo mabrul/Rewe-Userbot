@@ -10,7 +10,7 @@
  $ sudo apt-get update -y
  $ sudo apt-get upgrade
  $ git clone https://github.com/mabrul/Rewe-Userbot
- $ cd Rewe-Rewe-Userbot
+ $ cd Rewe-Userbot
  $ python3 -m venv venv
  $ source venv/bin/act*
  $ pip3 install -U-r req*
