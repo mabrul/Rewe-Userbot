@@ -93,12 +93,12 @@ async def pink(client: Client, message: Message):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await Uputt.edit(
-        f"**❏Uputt-Pyrobot**\n"
+        f"**❏Rewe-Userbot**\n"
         f"**├• PING   :** "
         f"`%sms` \n"
         f"**├•  Uptime  :** "
         f"`{uptime}` \n"
-        f"**└•  Dajjal   :** {client.me.mention}" % (duration)
+        f"**└•  OWNER   :** {client.me.mention}" % (duration)
     )
   
 
