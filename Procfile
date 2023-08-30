@@ -1,1 +1,1 @@
-worker: python3 -m Rewe
+worker: python3 -m Uputt
