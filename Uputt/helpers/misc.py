@@ -96,7 +96,7 @@ def git():
         except GitCommandError:
             repo.git.reset("--hard", "FETCH_HEAD")
         install_req("pip3 install --no-cache-dir -U -r requirements.txt")
-        LOGGER("Rewe").info("Fetched Latest Updates")
+        LOGGER("Uputt").info("Fetched Latest Updates")
 
 
 def is_heroku():
@@ -110,7 +110,7 @@ def heroku():
             try:
                 Heroku = heroku3.from_key(HEROKU_API_KEY)
                 HAPP = Heroku.app(HEROKU_APP_NAME)
-                LOGGER("Rewe").info(f"Heroku App Configured")
+                LOGGER("Uputt").info(f"Heroku App Configured")
             except BaseException as e:
                 LOGGER("Heroku").error(e)
                 LOGGER("Heroku").info(
@@ -130,7 +130,7 @@ async def create_botlog(client):
     )
     desc = "Group Log untuk Rewe-Userbot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\nPowered By ~ @sattvibes @rewe_anu 🥵"
     try:
-        photo = "Rewe/resources/logo.jpg"
+        photo = "Uputt/resources/logo.jpg"
         gruplog = await client.create_supergroup("Rewe-Userbot Logs", desc)
         fine = gruplog.id
         await client.set_chat_photo(fine, photo=photo)
