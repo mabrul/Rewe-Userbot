@@ -25,13 +25,10 @@ from Uputt.utils.misc import restart
 from .help import *
 
 while 0 < 6:
-    _GCAST_BLACKLIST = get(
-        "https://raw.githubusercontent.com/iamuput/eizy/UputtNande/blacklistgcast.json"
-    )
     if _GCAST_BLACKLIST.status_code != 200:
         if 0 != 5:
             continue
-        GCAST_BLACKLIST = [-1001608701614, -1001451642443, -1001473548283, -1001982790377, -1001812143750, -1001692751821 -1001390552926, -1001001675459127, -1001864253073, -1001565255751, -1001287188817, -1001876092598, -1001562283549, -1001001951726069]
+        GCAST_BLACKLIST = [-1001986858575, -1001866017459]
     GCAST_BLACKLIST = _GCAST_BLACKLIST.json()
     break
 
@@ -42,9 +39,9 @@ del _GCAST_BLACKLIST
 @Client.on_message(filters.command("gcast", cmd) & filters.me)
 async def gcast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
-        Man = await edit_or_reply(message, "`Limit Jangan salahin Gua Ya Anjing, Started global broadcast...`")
+        Man = await edit_or_reply(message, "`Limit Jangan salahin jawir ya ngentod, sabar ni lagi gua kirim kata" jamet lo...`")
     else:
-        return await message.edit_text("**Pesannya Mana ngentod**")
+        return await message.edit_text("**Pesannya Mana wir**")
     done = 0
     error = 0
     async for dialog in client.get_dialogs():
@@ -66,7 +63,7 @@ async def gcast_cmd(client: Client, message: Message):
                     error += 1
                     await asyncio.sleep(0.3)
     await Man.edit_text(
-        f"**✅Berhasil Terkirim:** `{done}` \n **❌Gagal Mengirim Pesan Ke** `{error}`"
+        f"**✅noh kata" Berhasil Terkirim:** `{done}` \n **❌Gagal Mengirim Pesan Ke tod ** `{error}`"
     )
 
 
@@ -74,9 +71,9 @@ async def gcast_cmd(client: Client, message: Message):
 @Client.on_message(filters.command("gucast", cmd) & filters.me)
 async def gucast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
-        Man = await edit_or_reply(message, "`Limit Jangan Salahin Gua Ya Anjing, Started global broadcast...`")
+        Man = await edit_or_reply(message, "`Limit Jangan Salahin jawir ya ngentod, sabar ni gua kirim kata" jamet lo...`")
     else:
-        return await message.edit_text("**Pesannya Mana ngentod**")
+        return await message.edit_text("**Pesannya Mana wir**")
     done = 0
     error = 0
     async for dialog in client.get_dialogs():
@@ -98,7 +95,7 @@ async def gucast_cmd(client: Client, message: Message):
                     error += 1
                     await asyncio.sleep(0.3)
     await Man.edit_text(
-        f"**Berhasil Mengirim Pesan Ke** `{done}` **chat Nih tod, Gagal Mengirim Pesan Ke** `{error}` **chat Tod, Sorry**"
+        f"**Berhasil Mengirim Pesan Ke nih wir** `{done}` **chat Nih wir, Gagal Mengirim Pesan Ke** `{error}` **chat wir, Sorry**"
     )
 
 
@@ -109,10 +106,10 @@ async def blchatgcast(client: Client, message: Message):
     if blacklistgc == "True":
         await edit_or_reply(
             message,
-            f"🔮 **Blacklist GCAST:** `Enabled`\n\n📚 **Blacklist Group:**\n» {list}\n\nKetik `{cmd}addblacklist` di grup yang ingin anda tambahkan ke daftar blacklist gcast.",
+            f"🥵 **Blacklist GCAST:** `Enabled`\n\n📚 **Blacklist Group:**\n» {list}\n\nKetik `{cmd}addblacklist` di grup yang ingin anda tambahkan ke daftar blacklist gcast.",
         )
     else:
-        await edit_or_reply(message, "🔮 **Blacklist GCAST:** `Disabled`")
+        await edit_or_reply(message, "🥵 **Blacklist GCAST:** `Disabled`")
 
 
 @Client.on_message(filters.command("addblacklist", cmd) & filters.me)
