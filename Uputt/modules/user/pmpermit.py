@@ -22,8 +22,8 @@ from Uputt.helpers.tools import get_arg
 from .help import *
 
 DEF_UNAPPROVED_MSG = (
-    "PMSecurity of ㅤ˹ 𝚄𝙿𝚄𝚃𝚃-𝙿𝚈𝚁𝙾𝙱𝙾𝚃 ˼ !\n"
-"•Please wait for me to respond or you will be blocked!!🚫\n"
+    "PMSecurity of ㅤʀᴇᴡᴇ-ᴜsᴇʀʙᴏᴛ !\n"
+"•Jᴀɴɢᴀɴ sᴘᴀᴍ ʏᴀ ɴᴀɴᴛɪ ᴅɪsᴇʀᴀɴɢ Jᴀᴡɪʀ\n"
 )
 
 
@@ -42,7 +42,7 @@ async def incomingpm(client: Client, message: Message):
     if await auto_accept(client, message) or message.from_user.is_self:
         message.continue_propagation()
     if message.chat.id != 777000:
-        PM_LIMIT = gvarstatus("PM_LIMIT") or 5
+        PM_LIMIT = gvarstatus("PM_LIMIT") or 2
         getmsg = gvarstatus("unapproved_msg")
         if getmsg is not None:
             UNAPPROVED_MSG = getmsg
