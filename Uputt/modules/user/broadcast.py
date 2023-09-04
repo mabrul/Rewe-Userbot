@@ -63,7 +63,7 @@ async def gcast_cmd(client: Client, message: Message):
                     error += 1
                     await asyncio.sleep(0.3)
     await Man.edit_text(
-        f"**✅noh kata" Berhasil Terkirim:** `{done}` \n **❌Gagal Mengirim Pesan Ke tod ** `{error}`"
+        f"**✅noh pesan lo Berhasil Terkirim:** `{done}` \n **❌Gagal Mengirim Pesan Ke tod ** `{error}`"
     )
 
 
