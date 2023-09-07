@@ -39,9 +39,9 @@ del _GCAST_BLACKLIST
 @Client.on_message(filters.command("gcast", cmd) & filters.me)
 async def gcast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
-        Man = await edit_or_reply(message, "`Limit Jangan salahin jawir ya ngentod, sabar ni lagi gua kirim pesan jamet lo...")
+        Man = await edit_or_reply(message, "`Limit Jangan salahin Gua Ya Anjing, Started global broadcast...`")
     else:
-        return await message.edit_text("**Pesannya Mana wir**")
+        return await message.edit_text("**Pesannya Mana ngentod**")
     done = 0
     error = 0
     async for dialog in client.get_dialogs():
@@ -62,7 +62,7 @@ async def gcast_cmd(client: Client, message: Message):
                 except Exception:
                     error += 1
                     await asyncio.sleep(0.3)
-     await Man.edit_text(
+    await Man.edit_text(
          f"**✅noh pesan lo Berhasil Terkirim:** `{done}` \n **❌Gagal Mengirim Pesan Ke** `{error}`"
     )
 
