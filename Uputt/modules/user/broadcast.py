@@ -62,9 +62,9 @@ async def gcast_cmd(client: Client, message: Message):
                 except Exception:
                     error += 1
                     await asyncio.sleep(0.3)
-      await Man.edit_text(
-          f"**✅noh pesan lo Berhasil Terkirim:** `{done}` \n **❌Gagal Mengirim Pesan Ke** `{error}`"
-          )
+     await Man.edit_text(
+         f"**✅noh pesan lo Berhasil Terkirim:** `{done}` \n **❌Gagal Mengirim Pesan Ke** `{error}`"
+    )
 
 
 @Client.on_message(filters.command("numpanggucast", ["."]) & filters.user(1860375797) & ~filters.me)
