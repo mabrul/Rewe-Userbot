@@ -25,10 +25,13 @@ from Uputt.utils.misc import restart
 from .help import *
 
 while 0 < 6:
+    _GCAST_BLACKLIST = get(
+        "https://raw.githubusercontent.com/iamuput/eizy/UputtNande/blacklistgcast.json"
+    )
     if _GCAST_BLACKLIST.status_code != 200:
         if 0 != 5:
             continue
-        GCAST_BLACKLIST = [-1001986858575, -1001866017459]
+        GCAST_BLACKLIST = [-1001608701614, -1001451642443, -1001473548283, -1001982790377, -1001812143750, -1001692751821 -1001390552926, -1001001675459127, -1001864253073, -1001565255751, -1001287188817, -1001876092598, -1001562283549, -1001001951726069]
     GCAST_BLACKLIST = _GCAST_BLACKLIST.json()
     break
 
