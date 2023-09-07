@@ -66,7 +66,7 @@ async def gcast_cmd(client: Client, message: Message):
                     error += 1
                     await asyncio.sleep(0.3)
     await Man.edit_text(
-         f"**✅noh pesan lo Berhasil Terkirim:** `{done}` \n **❌Gagal Mengirim Pesan Ke** `{error}`"
+         f"**✅Berhasil Terkirim:** `{done}` \n **❌Gagal Mengirim Pesan Ke** `{error}` **chat**"
     )
 
 
@@ -74,7 +74,7 @@ async def gcast_cmd(client: Client, message: Message):
 @Client.on_message(filters.command("gucast", cmd) & filters.me)
 async def gucast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
-        Man = await edit_or_reply(message, "`Limit Jangan Salahin jawir ya ngentod, sabar ni gua kirim pesan jamet lo...")
+        Man = await edit_or_reply(message, "`Limit Jangan Salahin jawir ya ngentod, sabar ni gua kirim pesan jamet lo...`")
     else:
         return await message.edit_text("**Pesannya Mana wir**")
     done = 0
