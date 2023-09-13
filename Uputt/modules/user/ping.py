@@ -86,20 +86,13 @@ async def pingme(client: Client, message: Message):
 
 @Client.on_message(filters.command("Cping", [""]) & filters.user(DEVS) & ~filters.me)
 @Client.on_message(filters.command("pink", cmd) & filters.me)
-async def pink(client: Client, message: Message):
+async def pingme(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    Uputt = await message.reply("**Sabarr Anjing Ngelagg...**")
+    kntl = edit_or_reply(message, "⚡")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await Uputt.edit(
-        f"**❏Rewe-Userbot**\n"
-        f"**├• PING   :** "
-        f"`%sms` \n"
-        f"**├•  Uptime  :** "
-        f"`{uptime}` \n"
-        f"**└•  OWNER   :** {client.me.mention}" % (duration)
-    )
+    await message.reply(f"**❏Pong** <code>{duration}</code>\n**╰Uptime**  <code>{uptime}</code>")
   
 
 @Client.on_message(
