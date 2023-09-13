@@ -25,7 +25,7 @@ AFK_RESTIRECT = {}
 DELAY_TIME = 3  # seconds
 
 
-@Client.on_message(filters.me & filters.command("aefka", cmd))
+@Client.on_message(filters.me & filters.command("afk", cmd))
 async def afk(client: Client, message: Message):
     if len(message.text.split()) >= 2:
         set_afk(True, message.text.split(None, 1)[1])
