@@ -13,7 +13,7 @@
  $ cd Rewe-Userbot
  $ python3 -m venv venv
  $ source venv/bin/act*
- $ pip3 install -U-r req*
+ $ pip3 install -U -r requirement.txt 
  $ cp sample.env .env
 ```
 
